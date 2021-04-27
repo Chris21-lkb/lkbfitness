@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\learnmoreController;
 use App\Http\Controllers\serviceController;
 use App\Http\Controllers\aboutpagecontroller;
+use App\Http\Controllers\successController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,7 @@ Route::get('/add', function(){
 Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
 Route::get('about', [aboutpagecontroller::class,'aboutpage']);
+Route::post('successAdd', [successController::class,'storekeys']);
 
 Route::post('addlearnmore',[learnmoreController::class,'addData']);
 Route::post('addabout',[aboutController::class,'store']);
