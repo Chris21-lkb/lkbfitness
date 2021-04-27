@@ -26,6 +26,11 @@ Route::get('/', function () {
 Route::get('/add', function(){
     return view('pages.add');
 });
+
+Route::get('/about', function(){
+    return view('pages.about');
+});
+
 Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
 
