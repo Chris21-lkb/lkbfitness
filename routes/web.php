@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\aboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\whatwedoController;
 use App\Http\Controllers\HomeController;
@@ -35,5 +36,6 @@ Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
 
 Route::post('addlearnmore',[learnmoreController::class,'addData']);
+Route::post('addabout',[aboutController::class,'store']);
 
 Route::post('addservice',[serviceController::class,'store']);
