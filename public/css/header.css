@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+}
+header{
+    background-image: url('/images/pic1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    font-family: Garamond;
+    border-bottom: 30px solid lightsalmon;
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    overflow: hidden;
+    margin-bottom: 500px;
+    background-color: black;
+}
+.headerContainer fixed-top{
+    background-color: white;
+}
+.headerTitle nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 3px;
+} 
+.headerTitle nav ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+.headerLinks nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.headerLinks nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.headerLinks nav ul li a:hover{
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+}
+.headerr{
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    height: 650px;
+}
+.headerText{
+    padding-top: 230px;
+    color: white;
+}
+.Text h1{
+    font-size: 65px;
+    text-align: center;
+}
+.Text p{
+    text-align: center;
+}
+.twoButtons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;;
+}
+.twoButtons ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.twoButtons ul li a{
+    text-decoration: none;
+    color: white;
+    border:1px solid grey;
+    padding:15px;
+}
+#contactUs{
+    background-color:whitesmoke;
+    color: black;
+}
+#contactUs:hover{
+    color: white;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+}
