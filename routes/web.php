@@ -6,6 +6,7 @@ use App\Http\Controllers\whatwedoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\learnmoreController;
 use App\Http\Controllers\serviceController;
+use App\Http\Controllers\aboutpagecontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,12 +29,13 @@ Route::get('/add', function(){
     return view('pages.add');
 });
 
-Route::get('/about', function(){
-    return view('pages.about');
-});
+//Route::get('/about', function(){
+//    return view('pages.about');
+//});
 
 Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
+Route::get('about', [aboutpagecontroller::class,'aboutpage']);
 
 Route::post('addlearnmore',[learnmoreController::class,'addData']);
 Route::post('addabout',[aboutController::class,'store']);

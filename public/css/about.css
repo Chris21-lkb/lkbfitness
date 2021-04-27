@@ -1,0 +1,18 @@
+.aboutcontainer{
+    margin: 50px;
+}
+.aboutcontainerdata{
+    display: flex;
+    justify-content: space-around;
+}
+.aboutcontainerdata-img img{
+    width: 350px;
+    height: 350px;
+}
+.aboutcontainerdata-content{
+    width: 600px;
+}
+.aboutcontainerdata-content p{
+    line-height: 1.6;
+    font-family: Garamond;
+}
