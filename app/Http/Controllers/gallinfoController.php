@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Picture;
 
-class pictureController extends Controller
+class gallinfoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class pictureController extends Controller
      */
     public function index()
     {
-        return View('pages.gallery')
-        ->with('data', Picture::all()); 
+        //
     }
 
     /**
@@ -36,21 +34,7 @@ class pictureController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'file_path' => 'required'
-        ]);
-
-        $file_path = $request ->file('file_path')->getClientOriginalName();
-
-        $request -> file('file_path') -> storeAs('public/galleryfile/', $file_path );
-
-        $picture = new Picture();
-
-        $picture->file_path = $file_path;
-
-        $picture->save();
-
-        return redirect()->back();
+        //
     }
 
     /**

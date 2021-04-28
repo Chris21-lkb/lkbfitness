@@ -27,8 +27,8 @@
         </div>
         <div class="twoButtons">
             <ul>
-                <li><a href="">START HERE</a></li>
-                <li><a href="" id="contactUs">CONTACT US</a></li>
+                <li><a href="{{url('contact')}}">START HERE</a></li>
+                <li><a href="{{url('contact')}}" id="contactUs">CONTACT US</a></li>
             </ul>
         </div>
     </div>

@@ -33,14 +33,16 @@ Route::get('/add', function(){
     return view('pages.add');
 });
 
-Route::get('/gallery', function(){
-   return view('pages.gallery');
-});
+//Route::get('/gallery', function(){
+//   return view('pages.gallery');
+//});
 
 Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
 Route::get('about', [aboutpagecontroller::class,'aboutpage']);
 Route::get('contact',[contactController::class,'index']);
+Route::get('gallery',[pictureController::class,'index']);
+
 Route::post('successAdd', [successController::class,'storekeys']);
 Route::post('usermessage', [usermesController::class,'store']);
 Route::post('addlearnmore',[learnmoreController::class,'addData']);
