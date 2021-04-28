@@ -48,3 +48,10 @@
     <input type="email" name="email" required placeholder="email">
     <button type="submit">upload</button>
 </form>
+
+<h1>gallery</h1>
+<form method="POST" action="addgallery" enctype="multipart/form-data">
+    @csrf
+    <input type="file" name="file_path" required>
+    <button type="submit">upload</button>
+</form>

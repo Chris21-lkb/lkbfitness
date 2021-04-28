@@ -9,6 +9,7 @@ use App\Http\Controllers\serviceController;
 use App\Http\Controllers\aboutpagecontroller;
 use App\Http\Controllers\successController;
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\pictureController;
 use App\Http\Controllers\usermesController;
 
 /*
@@ -32,9 +33,9 @@ Route::get('/add', function(){
     return view('pages.add');
 });
 
-//Route::get('/contact', function(){
- //   return view('pages.contact');
-//});
+Route::get('/gallery', function(){
+   return view('pages.gallery');
+});
 
 Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
@@ -45,5 +46,6 @@ Route::post('usermessage', [usermesController::class,'store']);
 Route::post('addlearnmore',[learnmoreController::class,'addData']);
 Route::post('addabout',[aboutController::class,'store']);
 Route::post('addcontact',[contactController::class,'store']);
+Route::post('addgallery',[pictureController::class,'store']);
 
 Route::post('addservice',[serviceController::class,'store']);

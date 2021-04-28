@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Picture;
 
-class galleryController extends Controller
+class pictureController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +35,21 @@ class galleryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'file_path' => 'required'
+        ]);
+
+        $file_path = $request ->file('file_path')->getClientOriginalName();
+
+        $request -> file('file_path') -> storeAs('public/galleryfile/', $file_path );
+
+        $picture = new Picture();
+
+        $picture->file_path = $file_path;
+
+        $picture->save();
+
+        return redirect()->back();
     }
 
     /**
