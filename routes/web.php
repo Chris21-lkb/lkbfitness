@@ -9,6 +9,7 @@ use App\Http\Controllers\serviceController;
 use App\Http\Controllers\aboutpagecontroller;
 use App\Http\Controllers\successController;
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\usermesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +41,7 @@ Route::get('home', [HomeController::class,'homepage']);
 Route::get('about', [aboutpagecontroller::class,'aboutpage']);
 Route::get('contact',[contactController::class,'index']);
 Route::post('successAdd', [successController::class,'storekeys']);
-
+Route::post('usermessage', [usermesController::class,'store']);
 Route::post('addlearnmore',[learnmoreController::class,'addData']);
 Route::post('addabout',[aboutController::class,'store']);
 Route::post('addcontact',[contactController::class,'store']);

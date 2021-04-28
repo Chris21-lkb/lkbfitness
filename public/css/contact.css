@@ -1,7 +1,7 @@
 .contactheadercontent{
     width: 400px;
     margin-top: -400px;
-    margin-bottom: 250px;
+    margin-bottom: 350px;
     color: white;
     margin-left: 30px;
 }
@@ -9,4 +9,74 @@
     font-family: Garamond;
     line-height: 1.7;
     font-size: 20px;
+}
+.contactcontainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: Garamond;
+    font-size: 16px;
+}
+.contactform{
+    width: 500px;
+}
+.contactform form input[type=text]{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 5px;
+}
+.contactform form input[type=tel]{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 5px;
+}
+.contactform form input[type=email]{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 440px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 5px;
+}
+.contactform form textarea{
+    width: 450px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contactform form button[type=submit]{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    border: 1px solid grey;
+}
+.contactform form button:hover{
+    cursor: pointer;
+    background-color: rgb(253, 250, 250);
+}
+.contactdata1{
+    width: 600px;
+    font-family: Garamond;
+    font-size: 20px;
+}
+.contactdata1-address{
+    border-bottom: 1px solid grey;
+}
+.contactdata2{
+    display: flex;
+    justify-content: space-between;
+    font-family: Garamond;
+    font-size: 16px;
 }
