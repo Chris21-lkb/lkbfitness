@@ -34,3 +34,21 @@
 .aboutcontainerdata-content h1{
     margin-top: 0px;
 }
+.aboutcontainerdata1{
+    display: flex;
+    justify-content: space-around;
+    width: 630px;
+    flex-wrap: wrap;
+}
+.aboutcontainerdata1-content{
+    width: 300px;
+    line-height: 1.7;
+    font-family: Garamond;
+    margin-right: 15px;
+}
+.aboutcontainerdata1-content h2{
+   border-bottom: 1px solid grey;
+}
+.aboutcontainerdataKeys{
+    margin-top: 90px;
+}
