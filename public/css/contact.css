@@ -1,0 +1,12 @@
+.contactheadercontent{
+    width: 400px;
+    margin-top: -400px;
+    margin-bottom: 250px;
+    color: white;
+    margin-left: 30px;
+}
+.contactheadercontent p{
+    font-family: Garamond;
+    line-height: 1.7;
+    font-size: 20px;
+}

@@ -14,7 +14,8 @@ class contactController extends Controller
      */
     public function index()
     {
-        //
+        return View('pages.contact')
+        ->with('data', Contact::all());
     }
 
     /**

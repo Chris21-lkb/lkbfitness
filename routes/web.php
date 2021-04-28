@@ -31,13 +31,14 @@ Route::get('/add', function(){
     return view('pages.add');
 });
 
-//Route::get('/about', function(){
-//    return view('pages.about');
+//Route::get('/contact', function(){
+ //   return view('pages.contact');
 //});
 
 Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
 Route::get('about', [aboutpagecontroller::class,'aboutpage']);
+Route::get('contact',[contactController::class,'index']);
 Route::post('successAdd', [successController::class,'storekeys']);
 
 Route::post('addlearnmore',[learnmoreController::class,'addData']);

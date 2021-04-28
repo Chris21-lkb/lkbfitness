@@ -15,7 +15,7 @@
                     <li><a href="">Programs</a></li>
                     <li><a href="">Gallery</a></li>
                     <li><a href="">Stories</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="{{url('contact')}}">Contact</a></li>
                     <li><a href="">Blog</a></li>
                 </ul>
             </nav>
