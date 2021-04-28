@@ -8,6 +8,7 @@ use App\Http\Controllers\learnmoreController;
 use App\Http\Controllers\serviceController;
 use App\Http\Controllers\aboutpagecontroller;
 use App\Http\Controllers\successController;
+use App\Http\Controllers\contactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,5 +42,6 @@ Route::post('successAdd', [successController::class,'storekeys']);
 
 Route::post('addlearnmore',[learnmoreController::class,'addData']);
 Route::post('addabout',[aboutController::class,'store']);
+Route::post('addcontact',[contactController::class,'store']);
 
 Route::post('addservice',[serviceController::class,'store']);

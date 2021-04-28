@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class contactController extends Controller
 {
@@ -34,7 +35,32 @@ class contactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'pagetitle' => 'required',
+            'introduction' => 'required',
+            'address' => 'required',
+            'telephone' => 'required',
+            'email' => 'required'
+        ]);
+
+        $pagetitle = $request ->get('pagetitle');
+        $introduction = $request ->get('introduction');
+        $address = $request ->get('address');
+        $telephone = $request ->get('telephone');
+        $email = $request ->get('email');
+
+
+        $contact= new Contact();
+
+        $contact -> pagetitle = $pagetitle;
+        $contact -> introduction = $introduction;
+        $contact -> address = $address;
+        $contact -> telephone = $telephone;
+        $contact -> email = $email;
+
+        $contact->save();
+
+        return redirect()->back();
     }
 
     /**
