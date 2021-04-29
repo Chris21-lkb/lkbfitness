@@ -55,3 +55,11 @@
     <input type="file" name="file_path" required>
     <button type="submit">upload</button>
 </form>
+
+<h1>gallery info</h1>
+<form method="POST" action="addgalinfo">
+    @csrf
+    <input type="text" name="pagetitle" required >
+    <input type="text" name="introduction" required>
+    <button type="submit">upload</button>
+</form>

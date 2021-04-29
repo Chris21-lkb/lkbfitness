@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Picture;
+use App\Models\Galinfo;
 
 class pictureController extends Controller
 {
@@ -15,7 +16,8 @@ class pictureController extends Controller
     public function index()
     {
         return View('pages.gallery')
-        ->with('data', Picture::all()); 
+        ->with('data', Picture::all())
+        ->with('data1', Galinfo::all());
     }
 
     /**

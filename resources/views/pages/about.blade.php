@@ -22,14 +22,18 @@
     <div class="aboutcontainerdataKeys">
     <h1>PILLARS OF SUCCESS</h1>
         <div class="aboutcontainerdata1">
-            @foreach($dataa as $dataa)
             <div class="aboutcontainerdata1-content">
-                <h2>{{ $dataa['title']}}</h2>
-                <p>{{ $dataa['content']}}</p>
-            </div>
+            @foreach($dataa as $dataa)
+                <div class="aboutcontainerdata1-content-data">
+                    <h2>{{ $dataa['title']}}</h2>
+                    <p>{{ $dataa['content']}}</p>
+                </div>
             @endforeach
+            </div>
             <div class="aboutcontainerdata1-content1">
-                
+            @foreach($dataaa as $dataaa)
+                <img src="{{ asset('/storage/galleryfile/' .$dataaa['file_path'])}}" alt="Image">    
+            @endforeach
             </div>
         </div>
     </div>

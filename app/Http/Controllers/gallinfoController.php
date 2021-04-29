@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Galinfo;
 
 class gallinfoController extends Controller
 {
@@ -34,7 +35,21 @@ class gallinfoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'pagetitle' => 'required',
+            'introduction' => 'required'
+        ]);
+        $pagetitle = $request ->get('pagetitle');
+        $introduction = $request ->get('introduction');
+
+        $galinfo= new Galinfo();
+
+        $galinfo -> pagetitle = $pagetitle;
+        $galinfo -> introduction = $introduction;
+
+        $galinfo->save();
+
+        return redirect()->back();
     }
 
     /**

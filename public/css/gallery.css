@@ -1,0 +1,26 @@
+.galleryheadercontent{
+    width: 400px;
+    margin-top: -350px;
+    margin-bottom: 350px;
+    color: white;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.gallerycontainer{
+    margin-bottom: 100px;
+}
+.gallerycontainercontent-img img{
+    width: 300px;
+    height: 300px;
+}
+.gallerycontainercontent-img{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.gallerycontainercontent{
+    width: 980px;
+    margin: 0 auto;
+}

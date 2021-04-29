@@ -37,18 +37,28 @@
 .aboutcontainerdata1{
     display: flex;
     justify-content: space-around;
-    width: 630px;
-    flex-wrap: wrap;
 }
 .aboutcontainerdata1-content{
-    width: 300px;
+    width: 750px;
     line-height: 1.7;
     font-family: Garamond;
     margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutcontainerdata1-content-data{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
 }
 .aboutcontainerdata1-content h2{
    border-bottom: 1px solid grey;
 }
 .aboutcontainerdataKeys{
     margin-top: 90px;
+}
+.aboutcontainerdata1-content1 img{
+    width: 350px;
+    height: 500px;
 }

@@ -9,6 +9,7 @@ use App\Http\Controllers\serviceController;
 use App\Http\Controllers\aboutpagecontroller;
 use App\Http\Controllers\successController;
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\gallinfoController;
 use App\Http\Controllers\pictureController;
 use App\Http\Controllers\usermesController;
 
@@ -51,3 +52,4 @@ Route::post('addcontact',[contactController::class,'store']);
 Route::post('addgallery',[pictureController::class,'store']);
 
 Route::post('addservice',[serviceController::class,'store']);
+Route::post('addgalinfo',[gallinfoController::class,'store']);
