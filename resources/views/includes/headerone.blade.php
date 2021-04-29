@@ -15,7 +15,6 @@
                     <li><a href="{{url('program')}}">Programs</a></li>
                     <li><a href="{{url('gallery')}}">Gallery</a></li>
                     <li><a href="{{url('contact')}}">Contact</a></li>
-                    <li><a href="">Admin</a></li>
                 </ul>
             </nav>
         </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Program;
+use App\Models\Progrinfo;
 
 class programController extends Controller
 {
@@ -14,7 +15,9 @@ class programController extends Controller
      */
     public function index()
     {
-        //
+        return View('pages.program')
+        ->with('data', Program::all())
+        ->with('dataa', Progrinfo::all());
     }
 
     /**

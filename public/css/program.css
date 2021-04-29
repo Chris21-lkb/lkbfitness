@@ -1,0 +1,38 @@
+.programheadercontent{
+    width: 400px;
+    margin-top: -430px;
+    margin-bottom: 200px;
+    color: white;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.programcontent{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.programheadercontent p{
+    font-size: 25px;
+}
+.programcontentdata{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 450px;
+}
+.programcontentdata img{
+    width: 350px;
+    height: 270px;
+}
+.programcontentdata-data{
+    margin-right: 25px;
+}
+.programcontentdata-data p{
+    line-height: 1.7;
+    font-family: Garamond;
+    text-align: justify;
+}
+.programcontentdata-data h4{
+    font-family: Garamond;
+    line-height: 1.7;
+}

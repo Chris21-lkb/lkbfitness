@@ -15,7 +15,6 @@
                     <li><a href="{{url('program')}}">Programs</a></li>
                     <li><a href="{{url('gallery')}}">Gallery</a></li>
                     <li><a href="{{url('contact')}}">Contact</a></li>
-                    <li><a href="">Admin</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +26,7 @@
         </div>
         <div class="twoButtons">
             <ul>
-                <li><a href="{{url('contact')}}">START HERE</a></li>
+                <li><a href="{{url('program')}}">START HERE</a></li>
                 <li><a href="{{url('contact')}}" id="contactUs">CONTACT US</a></li>
             </ul>
         </div>

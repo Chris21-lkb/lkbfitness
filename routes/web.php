@@ -12,6 +12,7 @@ use App\Http\Controllers\contactController;
 use App\Http\Controllers\gallinfoController;
 use App\Http\Controllers\pictureController;
 use App\Http\Controllers\programController;
+use App\Http\Controllers\progrinfoController;
 use App\Http\Controllers\usermesController;
 
 /*
@@ -33,15 +34,16 @@ Route::get('/add', function(){
     return view('pages.add');
 });
 
-Route::get('/program', function(){
-   return view('pages.program');
-});
+//Route::get('/program', function(){
+//   return view('pages.program');
+//});
 
 Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
 Route::get('about', [aboutpagecontroller::class,'aboutpage']);
 Route::get('contact',[contactController::class,'index']);
 Route::get('gallery',[pictureController::class,'index']);
+Route::get('program',[programController::class,'index']);
 
 Route::post('successAdd', [successController::class,'storekeys']);
 Route::post('usermessage', [usermesController::class,'store']);
@@ -53,3 +55,4 @@ Route::post('addprogram',[programController::class,'store']);
 
 Route::post('addservice',[serviceController::class,'store']);
 Route::post('addgalinfo',[gallinfoController::class,'store']);
+Route::post('programinfo',[progrinfoController::class,'adddata']);

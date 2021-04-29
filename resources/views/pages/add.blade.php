@@ -64,7 +64,7 @@
     <button type="submit">upload</button>
 </form>
 
-<h1>gallery</h1>
+<h1>program</h1>
 <form method="POST" action="addprogram" enctype="multipart/form-data">
     @csrf
     <input type="text" name="name" required>
@@ -73,5 +73,13 @@
     <input type="text" name="motivation" required >
     <input type="text" name="data" required>
     <input type="file" name="file_path" required>
+    <button type="submit">upload</button>
+</form>
+
+<h1>program info</h1>
+<form method="POST" action="programinfo">
+    @csrf
+    <input type="text" name="pagetitle" required >
+    <input type="text" name="introduction" required>
     <button type="submit">upload</button>
 </form>
