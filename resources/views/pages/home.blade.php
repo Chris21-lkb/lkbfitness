@@ -16,7 +16,7 @@
                 <p>{{ $data2['content']}}</p>
             </div>
             <div class="learnmore-info-link">
-                <a href="#">LEARN MORE</a>
+                <a href="{{url('program')}}">LEARN MORE</a>
             </div>
         </div>
         @endforeach

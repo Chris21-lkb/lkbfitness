@@ -12,10 +12,10 @@
                 <ul>
                     <li><a href="{{url('home')}}">Home</a></li>
                     <li><a href="{{url('about')}}">About</a></li>
-                    <li><a href="">Programs</a></li>
+                    <li><a href="{{url('program')}}">Programs</a></li>
                     <li><a href="{{url('gallery')}}">Gallery</a></li>
                     <li><a href="{{url('contact')}}">Contact</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="">Admin</a></li>
                 </ul>
             </nav>
         </div>

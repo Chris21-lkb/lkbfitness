@@ -11,6 +11,7 @@ use App\Http\Controllers\successController;
 use App\Http\Controllers\contactController;
 use App\Http\Controllers\gallinfoController;
 use App\Http\Controllers\pictureController;
+use App\Http\Controllers\programController;
 use App\Http\Controllers\usermesController;
 
 /*
@@ -27,16 +28,14 @@ use App\Http\Controllers\usermesController;
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::get('/home', function(){
- //return view('pages.home');
-//});
+
 Route::get('/add', function(){
     return view('pages.add');
 });
 
-//Route::get('/gallery', function(){
-//   return view('pages.gallery');
-//});
+Route::get('/program', function(){
+   return view('pages.program');
+});
 
 Route::post('add',[whatwedoController::class,'store']);
 Route::get('home', [HomeController::class,'homepage']);
@@ -50,6 +49,7 @@ Route::post('addlearnmore',[learnmoreController::class,'addData']);
 Route::post('addabout',[aboutController::class,'store']);
 Route::post('addcontact',[contactController::class,'store']);
 Route::post('addgallery',[pictureController::class,'store']);
+Route::post('addprogram',[programController::class,'store']);
 
 Route::post('addservice',[serviceController::class,'store']);
 Route::post('addgalinfo',[gallinfoController::class,'store']);
